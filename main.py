@@ -21,6 +21,7 @@ def get_languages(somestring):
 		if str(somestring[i]).isupper():
 			languages.append(somestring[left:i])
 			left = i
+	languages.append(somestring[left:])
 	return languages
 
 def get_cells(row, tmp):
